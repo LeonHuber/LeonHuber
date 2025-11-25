@@ -1,0 +1,205 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    overflow-x: hidden;
+    background: #111;
+}
+
+.sidebar {
+    width: 15vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background: linear-gradient(to top right, tomato, violet);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 10;
+}
+
+.sidebar a {
+    color: #333;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    transform: scale(1.05);
+    color: #777;
+    cursor: pointer;
+}
+
+
+.content {
+    width: 80vw;
+    height: 100vh;
+    margin-left: 15vw;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+    padding: 40px;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+#about {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 40px;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+#work {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 40px;
+    width: 100%;
+    min-height: 100vh;
+   
+}
+
+#work h1 {
+    background: linear-gradient(to top right, tomato, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#about p{
+    color: #fff;
+    font-size: 17px;
+}
+
+#about h1{
+    background: linear-gradient(to top right, tomato, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#main h1 {
+    font-size: 70px;
+    background: linear-gradient(to top right, tomato, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#main p {
+    font-size: 30px;
+    color: #fff;
+}
+
+#frHeading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.frameworks {
+    display: flex;
+    justify-content: row;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.frCard {
+    width: 30%;
+    background-color: #333;
+    border-radius: 15px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.frCard:hover{
+    transform: translateY(-5px);
+}
+
+.frCard h2{
+    background: linear-gradient(to top right, tomato, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image {
+    width: 80%;
+    aspect-ratio: 1;
+}
+
+.aboutCard {
+    background-color: #333;
+    border-radius: 15px;
+    padding: 30px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutCard:hover{
+    transform: translateY(-5px);
+}
+
+.moreButton {
+    padding: 10px;
+    background: linear-gradient(to top right, tomato, violet);
+
+    border-radius: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.moreButton:hover {
+    background: linear-gradient(to bottom right, tomato, violet);
+
+}
+
+.moreButton:active {
+    transform: scale(0.95)
+}
+
+.projektCard {
+    background-color: #333;
+    border-radius: 15px;
+    padding: 20px;
+    width: 95%;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.projektCard h2 {
+    margin: 0;
+    background: linear-gradient(to top right, tomato, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projektCard p{
+    color: #fff;
+}
