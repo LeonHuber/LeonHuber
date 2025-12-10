@@ -3,96 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leon Huber</title>
-     <link rel="icon" type="image/png" href="pic.png">
+    <title>Leon Huber – Softwareentwicklung</title>
+    <link rel="icon" type="image/png" href="images/pic.png">
+    <meta name="description" content="Portfolio von Leon Huber – moderne App- und Webentwicklung mit React Native, Angular und HTML/CSS.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-    <div class="sidebar">
-        <a href="#main">Home</a>
-        <a href="#about">Über Mich</a>
-        <a href="#work">Meine Arbeit</a>
-    </div>
- 
-    <div class="content">
-        <section id="main">
-            <h1>Hi, Ich bin Leon Huber</h1>
-            <p>Softwaredeveloper</p>
-        </section>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#main" class="brand">
+                <img src="pic.png" alt="Logo von Leon Huber" class="brand-logo">
+                <span class="brand-name">Leon&nbsp;Huber</span>
+            </a>
 
-        <section id="about">
-           <div class="aboutCard">
+            <nav class="nav">
+                <a href="#main" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">Über mich</a>
+                <a href="#work" class="nav-link">Projekte</a>
+                <a href="#mail" class="nav-link nav-link-cta">Kontakt</a>
+            </nav>
+        </div>
+    </header>
 
-          
-                <h1>Über Mich</h1>
-                <p>Ich bin Leon Huber, Softwareentwickler mit Fokus auf moderne App- und Webentwicklung. Mit React Native<br>
-                    programmiere ich mobile Apps, während ich im Web vor allem mit Angular und HTML arbeite. Dabei lege<br>
-                    ich Wert auf sauberen Code, klare Strukturen und benutzerfreundliche Interfaces.<br>
-                    Ich entwickle digitale Lösungen, die funktional, performant und intuitiv sind – mit Leidenschaft für Technik<br>
-                    und stetigem Lernwillen.</p>
+    <main>
+        <!-- HERO -->
+        <section id="main" class="section hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <p class="eyebrow">Softwareentwicklung · Apps &amp; Web</p>
+                    <h1>Hi, ich bin <span class="accent">Leon&nbsp;Huber</span>.</h1>
+                    <p class="hero-subtitle">
+                        Ich entwickle moderne Apps mit React Native und skalierbare Webanwendungen mit Angular &amp; HTML –
+                        mit Fokus auf Performance, Struktur und ein klares, nutzerzentriertes Design.
+                    </p>
 
-            </div>
-
-                <h1 id="frHeading">Das Kann ich</h1>
-
-                <div class="frameworks">
-                    <div class="frCard">
-                        <h2>React Native</h2>
-                        <img src="rn.png" class="image">
-                        <a class="moreButton" href="https://reactnative.dev/">Mehr Erfahren</a>
+                    <div class="hero-actions">
+                        <a href="#work" class="button primary">Projekte ansehen</a>
+                        <a href="#about" class="button ghost">Mehr über mich</a>
                     </div>
-                
-            
-                    <div class="frCard">
-                        <h2>Angular</h2>
-                        <img src="angular.png" class="image">
-                        <a class="moreButton" href="https://angular.dev/">Mehr Erfahren</a>
-                    </div>
-              
-            
-                    <div class="frCard">
-                        <h2>Web Entwicklung</h2>
-                        <img src="htmlL.png" class="image">
-                        <a class="moreButton" href="https://de.wikipedia.org/wiki/Hypertext_Markup_Language" >Mehr Erfahren</a>
+
+                    <div class="hero-meta">
+                        <span>React Native · Angular · TypeScript · UX</span>
                     </div>
                 </div>
-        
+
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="hero-avatar">
+                            <img src="pic.png" alt="Porträt von Leon Huber">
+                        </div>
+                        <p class="hero-role">Softwareentwickler in Ausbildung</p>
+                        <p class="hero-stack">React Native · Angular · HTML/CSS</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="work">
-        
-            <h1>Meine Projekte</h1>
-            <div class="projektCard">
-                <h2>Splan</h2>
-                <p>Eine Simple Schoolplaner App mit React Native</p>
-                <a class="moreButton" href="https://github.com/leonhr03/splan-school">Zum Github</a>
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="container two-column">
+                <div class="section-header">
+                    <h2>Über mich</h2>
+                    <p>Wer ich bin und wie ich arbeite.</p>
+                </div>
+
+                <div class="section-content">
+                    <article class="card about-card">
+                        <p>
+                            Ich bin Leon Huber, Softwareentwickler mit Fokus auf moderne App- und Webentwicklung.
+                            Mit <strong>React Native</strong> entwickle ich mobile Apps, im Web arbeite ich überwiegend mit
+                            <strong>Angular</strong>, <strong>TypeScript</strong> und <strong>HTML/CSS</strong>.
+                        </p>
+                        <p>
+                            Mir sind <strong>sauberer Code</strong>, <strong>klare Architektur</strong> und
+                            <strong>intuitive Benutzeroberflächen</strong> wichtig. Ich baue Lösungen, die performen,
+                            wartbar sind und sich für Nutzer selbstverständlich anfühlen.
+                        </p>
+                    
+                    </article>
+
+                    <aside class="card skills-card">
+                        <h3>Stack im Überblick</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <span>Mobile</span>
+                                <span>React Native, Expo, Supabase</span>
+                            </li>
+                            <li>
+                                <span>Frontend</span>
+                                <span>Angular, TypeScript, HTML5, CSS3</span>
+                            </li>
+                            <li>
+                                <span>Tools</span>
+                                <span>GitHub, VS Code</span>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
             </div>
 
-            <div class="projektCard">
-                <h2>Pingo</h2>
-                <p>Social Media App mit Supabase in React Native</p>
-                <a class="moreButton" href="https://github.com/leonhr03/Pingo">Zum Github</a>
-            </div>
+            <div class="container">
+                <h3 class="subheading" id="frHeading">Technologien, mit denen ich arbeite</h3>
 
-            <div class="projektCard">
-                <h2>InSearchNext</h2>
-                <p>Eine Selbererstellbare Wissensdatenbank in Angular</p>
-                <a class="moreButton" href="https://leonhr03.github.io/InSearchNext/">Zum Projekt</a>
-            </div>
+                <div class="grid three">
+                    <article class="card tech-card">
+                        <h4>React Native</h4>
+                        <img src="rn.png" class="tech-image" alt="React Native Logo">
+                        <p>Cross-Platform Apps für iOS &amp; Android mit einer Code-Basis.</p>
+                        <a class="button text" href="https://reactnative.dev/" target="_blank" rel="noopener">
+                            Mehr erfahren
+                        </a>
+                    </article>
 
-            <div class="projektCard">
-                <h2>IdeaPlan</h2>
-                <p>Sammling für Ideen in Angular</p>
-                <a class="moreButton" href="https://leonhr03.github.io/ideaPlan/">Zum Projekt</a>
-            </div>
+                    <article class="card tech-card">
+                        <h4>Angular</h4>
+                        <img src="angular.png" class="tech-image" alt="Angular Logo">
+                        <p>Strukturierte SPAs mit Komponenten, Routing &amp; Dependency Injection.</p>
+                        <a class="button text" href="https://angular.dev/" target="_blank" rel="noopener">
+                            Mehr erfahren
+                        </a>
+                    </article>
 
-           
-            
+                    <article class="card tech-card">
+                        <h4>Web Entwicklung</h4>
+                        <img src="htmlL.png" class="tech-image" alt="HTML Logo">
+                        <p>Saubere HTML-Struktur, modernes CSS und responsive Layouts.</p>
+                        <a class="button text" href="https://de.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank" rel="noopener">
+                            Mehr erfahren
+                        </a>
+                    </article>
+                </div>
+            </div>
         </section>
-    </div>
+
+        <!-- PROJECTS -->
+        <section id="work" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ausgewählte Projekte</h2>
+                    <p>Eine Auswahl von Projekten, an denen ich gearbeitet habe.</p>
+                </div>
+
+                <div class="grid two">
+                    <article class="card project-card">
+                        <div class="project-tag">React Native · App</div>
+                        <h3>Splan</h3>
+                        <p>
+                            Eine minimalistische Schulplaner-App, die Stundenplan, Hausaufgaben und Prüfungen bündelt.
+                        </p>
+                        <a class="button text" href="https://github.com/leonhr03/splan-school" target="_blank" rel="noopener">
+                            Code auf GitHub
+                        </a>
+                    </article>
+
+                    <article class="card project-card">
+                        <div class="project-tag">React Native · Social</div>
+                        <h3>Pingo</h3>
+                        <p>
+                            Eine Social-Media-App mit Supabase-Backend für schnelle Prototypen und Realtime-Features.
+                        </p>
+                        <a class="button text" href="https://github.com/leonhr03/Pingo" target="_blank" rel="noopener">
+                            Code auf GitHub
+                        </a>
+                    </article>
+
+                    <article class="card project-card">
+                        <div class="project-tag">Angular · Web</div>
+                        <h3>InSearchNext</h3>
+                        <p>
+                            Eine selbst konfigurierbare Wissensdatenbank mit Such- und Filterfunktionen.
+                        </p>
+                        <a class="button text" href="https://leonhr03.github.io/InSearchNext/" target="_blank" rel="noopener">
+                            Projekt ansehen
+                        </a>
+                    </article>
+
+                    <article class="card project-card">
+                        <div class="project-tag">Angular · Web</div>
+                        <h3>IdeaPlan</h3>
+                        <p>
+                            Ein strukturierter Ort, um Ideen festzuhalten, zu priorisieren und umzusetzen.
+                        </p>
+                        <a class="button text" href="https://leonhr03.github.io/ideaPlan/" target="_blank" rel="noopener">
+                            Projekt ansehen
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="mail" class="section section-contact">
+            <div class="container two-column">
+                <div class="section-header">
+                    <h2>Kontakt</h2>
+                    <p>Schreib mir, wenn du Fragen hast oder ein Projekt starten möchtest.</p>
+                </div>
+
+                <div class="section-content">
+                    <form class="card contact-card" id="contact-form">
+                        <div class="form-row">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Dein Name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">E-Mail</label>
+                            <input type="email" id="email" name="email" placeholder="dein.name@mail.de" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="subject">Betreff</label>
+                            <input type="text" id="subject" name="subject" placeholder="Worum geht es?" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="content">Nachricht</label>
+                            <textarea id="content" name="content" rows="5" placeholder="Deine Nachricht..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="button primary full-width">E-Mail senden</button>
+                        <p class="form-hint">
+                            Beim Absenden wird dein E-Mail-Programm mit einer vorformatierten Nachricht geöffnet.
+                        </p>
+                        <p class="form-status" id="form-status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Leon Huber. Alle Rechte vorbehalten.</p>
+            <p class="footer-links">
+                <a href="#main">Zurück nach oben</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // dynamisches Jahr im Footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // mailto-Handling für das Kontaktformular
+        const form = document.getElementById('contact-form');
+        const statusEl = document.getElementById('form-status');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const content = document.getElementById('content').value.trim();
+
+            if (!name || !email || !subject || !content) {
+                statusEl.textContent = 'Bitte fülle alle Felder aus.';
+                statusEl.classList.add('error');
+                return;
+            }
+
+            const mailSubject = encodeURIComponent('Portfolio-Anfrage: ' + subject);
+            const mailBody = encodeURIComponent(
+                'Name: ' + name + '\n' +
+                'E-Mail: ' + email + '\n\n' +
+                'Nachricht:\n' + content
+            );
+
+            // TODO: Echte E-Mail-Adresse eintragen
+            window.location.href = 'mailto:leon.huber@example.com?subject=' + mailSubject + '&body=' + mailBody;
+
+            statusEl.textContent = 'Dein E-Mail-Programm sollte sich gleich öffnen.';
+            statusEl.classList.remove('error');
+        });
+    </script>
 </body>
 </html>
-
-
-
